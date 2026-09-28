@@ -1,7 +1,7 @@
 from models.vehicle import Vehicle
+from models.car import Car
 
-car = Vehicle('BMW', 'M5', 2025)
+car1 = Car('BMW', 'M5', 2025, 0)
 bike = Vehicle('Cube', 'Nuroad', 2025)
 
-
-print(car)
+print(car1.get_info())
