@@ -26,4 +26,6 @@ class Vehicle:
         if value < 0:
             raise ValueError("Скорость не может быть отрицательной")
         self._speed = value
-        
+
+    def __str__(self):
+        return f'{self.brand} {self.model} {self.year}, скорость: {self.speed} км/ч'
