@@ -6,13 +6,24 @@ class Vehicle:
         self._speed = 0
 
     def accelerate(self, value):
-        self._speed += value
+        self.speed += value
 
     def brake(self, value):
-        self._speed = max(0, self._speed - value)
+        self.speed -= value
 
     def stop(self):
         self._speed = 0
 
     def get_info(self):
         return vars(self)
+
+    @property
+    def speed(self):
+        return self._speed
+
+    @speed.setter
+    def speed(self, value):
+        if value < 0:
+            raise ValueError("Скорость не может быть отрицательной")
+        self._speed = value
+        
