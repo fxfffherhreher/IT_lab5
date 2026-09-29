@@ -6,7 +6,7 @@ class Motorcycle(Vehicle):
         self.has_sidecar = has_sidecar
 
     def get_info(self):
-        return f"Мотоцикл: {self.brand} {self.model}, коляска: {self.doors}"
+        return f"Мотоцикл: {self.brand} {self.model}, коляска: {self.has_sidecar}"
 
     def move(self):
         return "Мотоцикл движется"
