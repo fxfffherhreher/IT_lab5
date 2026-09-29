@@ -7,3 +7,6 @@ class Truck(Vehicle):
 
     def get_info(self):
         return f"Грузовик: {self.brand} {self.model}, Максимальная загрузка: {self.max_load}"
+
+    def move(self):
+        return "Грузовик движется"

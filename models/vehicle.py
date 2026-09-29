@@ -1,4 +1,10 @@
-class Vehicle:
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def move(self):
+        pass
+
     def __init__(self, brand, model, year):
         self.brand = brand
         self.model = model

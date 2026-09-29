@@ -7,3 +7,6 @@ class Motorcycle(Vehicle):
 
     def get_info(self):
         return f"Мотоцикл: {self.brand} {self.model}, коляска: {self.doors}"
+
+    def move(self):
+        return "Мотоцикл движется"
